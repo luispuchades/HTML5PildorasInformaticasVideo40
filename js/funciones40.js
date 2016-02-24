@@ -28,6 +28,7 @@ function comenzarArrastrar(e) {
     var ruta;
     var codigo;
 
+
 //Asignamos a la variable ruta el atributo src de la imagen para que tenga
 //la ruta automáticamente
     ruta = elemOrigen.getAttribute("src");
@@ -37,6 +38,7 @@ function comenzarArrastrar(e) {
 // "e" del evento desencadenado el formato "Text" a transferir y la ruta completa 
 //que en este caso es la variable "codigo"
     e.dataTransfer.setData("Text", codigo);
+
 }
 
 
@@ -49,6 +51,7 @@ function soltado(e) {
 //getdata correspondiente a los datos que habíamos indicado que ibamos a
 //transferir con setData en la función anterior.
     zonaDestino.innerHTML = e.dataTransfer.getData("Text");
+
 }
 
 
